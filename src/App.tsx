@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
+import { useScrollToTop } from "@/hooks/useScrollToTop";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Strategy from "@/pages/Strategy";
@@ -15,6 +16,11 @@ import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
 
+function ScrollToTop() {
+  useScrollToTop();
+  return null;
+}
+
 const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
@@ -22,6 +28,7 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <Layout>
             <Routes>
               <Route path="/" element={<Home />} />
