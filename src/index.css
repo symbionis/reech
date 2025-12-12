@@ -2,30 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Reech Fund Design System - Institutional Climate Finance */
-
 @layer base {
   :root {
-    /* Core Brand Colors - HSL Values */
-    --background: 50 20% 98%;           /* #FAFAF8 off-white */
-    --foreground: 0 0% 17%;              /* #2C2C2C charcoal */
+    --background: 50 20% 98%;
+    --foreground: 0 0% 17%;
     
-    --card: 38 30% 92%;                  /* #E8DCC8 warm cream */
-    --card-foreground: 0 0% 17%;         /* #2C2C2C */
+    --card: 38 30% 92%;
+    --card-foreground: 0 0% 17%;
     
     --popover: 50 20% 98%;
     --popover-foreground: 0 0% 17%;
     
-    --primary: 120 21% 45%;              /* #5A8C5A warm forest green */
-    --primary-foreground: 50 20% 98%;    /* Off-white */
+    --primary: 120 21% 45%;
+    --primary-foreground: 50 20% 98%;
     
-    --secondary: 38 30% 92%;             /* Warm cream */
+    --secondary: 38 30% 92%;
     --secondary-foreground: 0 0% 17%;
     
     --muted: 38 20% 95%;
     --muted-foreground: 0 0% 40%;
     
-    --accent: 38 30% 85%;                /* Slightly darker cream */
+    --accent: 38 30% 85%;
     --accent-foreground: 0 0% 17%;
     
     --destructive: 0 84% 60%;
@@ -37,30 +34,15 @@
     
     --radius: 0.375rem;
     
-    /* Extended Palette */
-    --forest: 120 21% 45%;               /* Primary green */
-    --forest-dark: 120 21% 38%;          /* Darker green for hover */
-    --forest-light: 120 21% 55%;         /* Lighter green */
-    --charcoal: 0 0% 17%;                /* Main text */
-    --charcoal-light: 0 0% 30%;          /* Secondary text */
-    --cream: 38 30% 92%;                 /* Accent backgrounds */
-    --cream-light: 38 30% 96%;           /* Subtle backgrounds */
-    --sand: 38 25% 80%;                  /* Borders, dividers */
-    --caution: 30 50% 65%;               /* Warm brown/gold for risk */
-    
-    /* Typography */
-    --font-display: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    
-    /* Shadows */
-    --shadow-sm: 0 1px 3px rgba(44, 44, 44, 0.08);
-    --shadow-md: 0 4px 12px rgba(44, 44, 44, 0.1);
-    --shadow-lg: 0 8px 24px rgba(44, 44, 44, 0.12);
-    
-    /* Transitions */
-    --transition-fast: 150ms ease;
-    --transition-base: 250ms ease;
-    --transition-slow: 400ms ease;
+    --forest: 120 21% 45%;
+    --forest-dark: 120 21% 38%;
+    --forest-light: 120 21% 55%;
+    --charcoal: 0 0% 17%;
+    --charcoal-light: 0 0% 30%;
+    --cream: 38 30% 92%;
+    --cream-light: 38 30% 96%;
+    --sand: 38 25% 80%;
+    --caution: 30 50% 65%;
   }
 }
 
@@ -75,73 +57,24 @@
   
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: var(--font-body);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.7;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-display);
-    font-weight: 600;
-    line-height: 1.25;
-    letter-spacing: -0.02em;
-  }
-  
-  h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl text-primary;
-  }
-  
-  h2 {
-    @apply text-3xl md:text-4xl lg:text-5xl text-primary;
-  }
-  
-  h3 {
-    @apply text-2xl md:text-3xl text-foreground;
-  }
-  
-  h4 {
-    @apply text-xl md:text-2xl text-foreground;
-  }
-  
-  p {
-    @apply text-base md:text-lg leading-relaxed;
   }
 }
 
 @layer components {
-  /* Section container */
   .section-container {
     @apply max-w-7xl mx-auto px-6 md:px-8 lg:px-12;
   }
   
-  /* Section spacing */
   .section-spacing {
     @apply py-16 md:py-24 lg:py-32;
   }
   
-  /* Card styles */
   .card-institutional {
     @apply bg-card rounded-lg p-8 shadow-sm border border-border/50 transition-all duration-300;
   }
   
-  .card-institutional:hover {
-    @apply shadow-md -translate-y-0.5;
-  }
-  
-  /* Link underline animation */
-  .link-underline {
-    @apply relative inline-block;
-  }
-  
-  .link-underline::after {
-    content: '';
-    @apply absolute bottom-0 left-0 w-full h-0.5 bg-primary origin-bottom-right scale-x-0 transition-transform duration-300;
-  }
-  
-  .link-underline:hover::after {
-    @apply origin-bottom-left scale-x-100;
-  }
-  
-  /* Hero overlay gradient */
   .hero-gradient {
     background: linear-gradient(
       135deg,
@@ -151,7 +84,6 @@
     );
   }
   
-  /* Subtle fade-in animation */
   .animate-fade-in {
     animation: fadeIn 0.6s ease-out forwards;
     opacity: 0;
@@ -165,18 +97,8 @@
     animation-delay: 0.2s;
   }
   
-  .animate-fade-in-delay-3 {
-    animation-delay: 0.3s;
-  }
-  
-  /* Stat card */
-  .stat-card {
-    @apply bg-background rounded-lg p-6 border border-border/30;
-  }
-  
-  /* Pillar card with image */
   .pillar-card {
-    @apply relative overflow-hidden rounded-lg group cursor-pointer;
+    @apply relative overflow-hidden rounded-lg cursor-pointer;
   }
   
   .pillar-card-image {
@@ -189,18 +111,6 @@
   
   .pillar-card-content {
     @apply absolute bottom-0 left-0 right-0 p-6 text-background;
-  }
-}
-
-@layer utilities {
-  /* Text balance for headings */
-  .text-balance {
-    text-wrap: balance;
-  }
-  
-  /* Gradient text */
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-forest-light;
   }
 }
 

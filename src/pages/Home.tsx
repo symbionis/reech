@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, TrendingUp, Shield } from "lucide-react";
@@ -316,7 +317,7 @@ function ValueCard({ icon, title, description }: { icon: React.ReactNode; title:
 
 function PillarCard({ image, title, description, href }: { image: string; title: string; description: string; href: string }) {
   return (
-    <Link to={href} className="pillar-card">
+    <Link to={href} className="pillar-card group">
       <img src={image} alt={title} className="pillar-card-image" />
       <div className="pillar-card-overlay" />
       <div className="pillar-card-content">
