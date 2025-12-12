@@ -74,11 +74,12 @@ export default function FundDetails() {
           </div>
 
           <div className="mt-16">
-            <h3 className="font-display font-semibold text-xl text-foreground mb-8 text-center">Timeline</h3>
-            <div className="grid md:grid-cols-3 gap-8">
-              <TimelineCard period="Current" title="Interest Gathering" description="Exploring market interest, refining concept, and building relationships" />
-              <TimelineCard period="Future" title="Legal & Governance Setup" description="Subject to sufficient interest: legal structure, governance setup, anchor commitments" />
-              <TimelineCard period="Future" title="Fund Launch" description="Subject to regulatory approval and investor commitments" />
+            <h3 className="font-display font-semibold text-xl text-foreground mb-8 text-center">Proposed Timeline</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <TimelineCard period="Current" title="Exploration & Interest Gathering" description="Understanding market interest and refining the concept" />
+              <TimelineCard period="Q1-Q2 2026" title="Legal & Governance Setup" description="Final legal structure and anchor investor commitments" />
+              <TimelineCard period="Q3 2026" title="First Close" description="€50mm target with fund launch" />
+              <TimelineCard period="Q4 2026+" title="Capital Deployment" description="Ongoing fund management and investor reporting" />
             </div>
           </div>
         </div>
