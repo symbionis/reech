@@ -150,8 +150,9 @@ export default function About() {
               </h3>
               <div className="space-y-6">
                 <TimelineItem period="Current" title="Exploration & Interest Gathering" description="Understanding market interest and refining the concept" />
-                <TimelineItem period="Future" title="Legal & Governance Setup" description="If sufficient interest, formal legal structure and governance" />
-                <TimelineItem period="Future" title="Fund Launch" description="Subject to regulatory approval and investor commitments" />
+                <TimelineItem period="Q1-Q2 2026" title="Legal & Governance Setup" description="Final legal structure and anchor investor commitments" />
+                <TimelineItem period="Q3 2026" title="First Close" description="€50mm target with fund launch" />
+                <TimelineItem period="Q4 2026+" title="Capital Deployment" description="Ongoing fund management and investor reporting" />
               </div>
             </div>
           </div>
