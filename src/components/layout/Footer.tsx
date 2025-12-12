@@ -29,28 +29,6 @@ const footerLinks = {
 };
 export function Footer() {
   return <footer className="bg-foreground text-primary-foreground">
-      {/* Global Disclaimer */}
-      <div className="border-b border-primary-foreground/10">
-        <div className="section-container py-8">
-          <div className="max-w-4xl">
-            <h4 className="font-display font-semibold text-sm uppercase tracking-wider mb-4 text-primary-foreground/80">
-              Disclaimer
-            </h4>
-            <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
-              This website is provided for informational purposes only to explore and discuss 
-              climate investment concepts. It does not constitute an offer or invitation to invest, 
-              financial, legal, or investment advice, or a prospectus or fund document.
-            </p>
-            <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
-              Reech Fund is not yet established or authorized. No investment decisions should be 
-              made based on this website. By using this site, you acknowledge that you have read 
-              and understood this disclaimer.
-            </p>
-            
-          </div>
-        </div>
-      </div>
-
       <div className="section-container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
@@ -95,9 +73,32 @@ export function Footer() {
             </ul>
           </div>
         </div>
+      </div>
 
-        {/* Bottom */}
-        <div className="mt-12 pt-8 border-t border-primary-foreground/10">
+      {/* Disclaimer */}
+      <div className="border-t border-primary-foreground/10">
+        <div className="section-container py-8">
+          <div className="max-w-4xl">
+            <h4 className="font-display font-semibold text-sm uppercase tracking-wider mb-4 text-primary-foreground/80">
+              Disclaimer
+            </h4>
+            <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
+              This website is provided for informational purposes only to explore and discuss 
+              climate investment concepts. It does not constitute an offer or invitation to invest, 
+              financial, legal, or investment advice, or a prospectus or fund document.
+            </p>
+            <p className="text-primary-foreground/60 text-sm leading-relaxed">
+              Reech Fund is not yet established or authorized. No investment decisions should be 
+              made based on this website. By using this site, you acknowledge that you have read 
+              and understood this disclaimer.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom */}
+      <div className="border-t border-primary-foreground/10">
+        <div className="section-container py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/50 text-sm">
               © {new Date().getFullYear()} Reech Fund. All rights reserved.
