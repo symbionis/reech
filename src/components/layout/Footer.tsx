@@ -1,23 +1,34 @@
 import { Link } from "react-router-dom";
-
 const footerLinks = {
-  fund: [
-    { name: "About the Fund", href: "/about" },
-    { name: "Investment Strategy", href: "/strategy" },
-    { name: "CPU Mechanism", href: "/cpu-mechanism" },
-    { name: "Risk & Returns", href: "/risk-returns" },
-    { name: "Fund Details", href: "/fund-details" },
-  ],
-  legal: [
-    { name: "Request Information", href: "/contact" },
-    { name: "Privacy Policy", href: "/privacy" },
-    { name: "Legal Disclaimer", href: "/legal" },
-  ],
+  fund: [{
+    name: "About the Fund",
+    href: "/about"
+  }, {
+    name: "Investment Strategy",
+    href: "/strategy"
+  }, {
+    name: "CPU Mechanism",
+    href: "/cpu-mechanism"
+  }, {
+    name: "Risk & Returns",
+    href: "/risk-returns"
+  }, {
+    name: "Fund Details",
+    href: "/fund-details"
+  }],
+  legal: [{
+    name: "Request Information",
+    href: "/contact"
+  }, {
+    name: "Privacy Policy",
+    href: "/privacy"
+  }, {
+    name: "Legal Disclaimer",
+    href: "/legal"
+  }]
 };
-
 export function Footer() {
-  return (
-    <footer className="bg-foreground text-primary-foreground">
+  return <footer className="bg-foreground text-primary-foreground">
       {/* Global Disclaimer */}
       <div className="border-b border-primary-foreground/10">
         <div className="section-container py-8">
@@ -35,9 +46,7 @@ export function Footer() {
               made based on this website. By using this site, you acknowledge that you have read 
               and understood this disclaimer.
             </p>
-            <p className="text-primary-foreground/50 text-xs">
-              For institutional inquiries only. | <Link to="/privacy" className="hover:text-primary-foreground">Privacy Policy</Link> | <Link to="/legal" className="hover:text-primary-foreground">Terms of Use</Link>
-            </p>
+            
           </div>
         </div>
       </div>
@@ -64,16 +73,11 @@ export function Footer() {
               Explore
             </h4>
             <ul className="space-y-3">
-              {footerLinks.fund.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.href}
-                    className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm"
-                  >
+              {footerLinks.fund.map(link => <li key={link.name}>
+                  <Link to={link.href} className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm">
                     {link.name}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -83,16 +87,11 @@ export function Footer() {
               Legal
             </h4>
             <ul className="space-y-3">
-              {footerLinks.legal.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.href}
-                    className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm"
-                  >
+              {footerLinks.legal.map(link => <li key={link.name}>
+                  <Link to={link.href} className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm">
                     {link.name}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
         </div>
@@ -109,6 +108,5 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }
