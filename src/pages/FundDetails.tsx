@@ -2,10 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Building, Calendar, Briefcase, Users, Globe, Scale } from "lucide-react";
-
 export default function FundDetails() {
-  return (
-    <>
+  return <>
       {/* Hero */}
       <section className="bg-cream-light section-spacing">
         <div className="section-container">
@@ -58,36 +56,12 @@ export default function FundDetails() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <GovernanceCard
-              icon={<Users className="w-6 h-6" />}
-              title="Fund Manager"
-              description="Professional investment manager with fiduciary responsibility for fund strategy and investor capital."
-            />
-            <GovernanceCard
-              icon={<Scale className="w-6 h-6" />}
-              title="Independent Board"
-              description="Oversight of fund governance, compliance, and strategic alignment."
-            />
-            <GovernanceCard
-              icon={<Building className="w-6 h-6" />}
-              title="AIFM"
-              description="Regulated entity ensuring AIFMD compliance, risk management, and regulatory oversight."
-            />
-            <GovernanceCard
-              icon={<Building className="w-6 h-6" />}
-              title="Custodian"
-              description="Institutional-grade custody of fund assets with dual fiat and digital safeguards."
-            />
-            <GovernanceCard
-              icon={<Briefcase className="w-6 h-6" />}
-              title="Administrator"
-              description="NAV calculation, fund accounting, and investor reporting."
-            />
-            <GovernanceCard
-              icon={<Scale className="w-6 h-6" />}
-              title="Auditor"
-              description="Annual independent audit of financial and impact metrics."
-            />
+            <GovernanceCard icon={<Users className="w-6 h-6" />} title="Fund Manager" description="Professional investment manager with fiduciary responsibility for fund strategy and investor capital." />
+            <GovernanceCard icon={<Scale className="w-6 h-6" />} title="Independent Board" description="Oversight of fund governance, compliance, and strategic alignment." />
+            <GovernanceCard icon={<Building className="w-6 h-6" />} title="AIFM" description="Regulated entity ensuring AIFMD compliance, risk management, and regulatory oversight." />
+            <GovernanceCard icon={<Building className="w-6 h-6" />} title="Custodian" description="Institutional-grade custody of fund assets with dual fiat and digital safeguards." />
+            <GovernanceCard icon={<Briefcase className="w-6 h-6" />} title="Administrator" description="NAV calculation, fund accounting, and investor reporting." />
+            <GovernanceCard icon={<Scale className="w-6 h-6" />} title="Auditor" description="Annual independent audit of financial and impact metrics." />
           </div>
         </div>
       </section>
@@ -118,21 +92,9 @@ export default function FundDetails() {
               Timeline
             </h3>
             <div className="grid md:grid-cols-3 gap-8">
-              <TimelineCard
-                period="Q1-Q2 2026"
-                title="Legal & Governance Setup"
-                description="Final legal structure finalization, governance setup, anchor investor commitments"
-              />
-              <TimelineCard
-                period="Q3 2026"
-                title="First Close & Launch"
-                description="€50mm first close target, fund launch, initial capital deployment begins"
-              />
-              <TimelineCard
-                period="Q4 2026+"
-                title="Ongoing Operations"
-                description="Capital deployment, project sourcing, investor reporting, performance monitoring"
-              />
+              <TimelineCard period="Q1-Q2 2026" title="Legal & Governance Setup" description="Final legal structure finalization, governance setup, anchor investor commitments" />
+              <TimelineCard period="Q3 2026" title="First Close & Launch" description="€50mm first close target, fund launch, initial capital deployment begins" />
+              <TimelineCard period="Q4 2026+" title="Ongoing Operations" description="Capital deployment, project sourcing, investor reporting, performance monitoring" />
             </div>
           </div>
         </div>
@@ -296,7 +258,7 @@ export default function FundDetails() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-2">Digital Custody</h4>
-                  <p className="text-sm text-muted-foreground">Institutional-grade digital custodian holds CPUs and private keys</p>
+                  <p className="text-sm text-muted-foreground">Institutional-grade digital custodian holds CEUs, stable coins and smart contract private keys</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-2">Dual Control</h4>
@@ -318,22 +280,10 @@ export default function FundDetails() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <ComplianceCard
-              title="AIFMD"
-              description="Full EU Alternative Investment Fund Managers Directive compliance"
-            />
-            <ComplianceCard
-              title="SFDR"
-              description="Sustainable Finance Disclosure Regulation (Article 8 or 9)"
-            />
-            <ComplianceCard
-              title="Impact Standards"
-              description="ISO 14064, Verra, Gold Standard alignment"
-            />
-            <ComplianceCard
-              title="KYC/AML"
-              description="Mandatory Know Your Customer and Anti-Money Laundering"
-            />
+            <ComplianceCard title="AIFMD" description="Full EU Alternative Investment Fund Managers Directive compliance" />
+            <ComplianceCard title="SFDR" description="Sustainable Finance Disclosure Regulation (Article 8 or 9)" />
+            <ComplianceCard title="Impact Standards" description="ISO 14064, Verra, Gold Standard alignment" />
+            <ComplianceCard title="KYC/AML" description="Mandatory Know Your Customer and Anti-Money Laundering" />
           </div>
         </div>
       </section>
@@ -355,57 +305,75 @@ export default function FundDetails() {
           </Button>
         </div>
       </section>
-    </>
-  );
+    </>;
 }
-
-function DetailRow({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="flex justify-between items-start py-3 border-b border-border/30">
+function DetailRow({
+  label,
+  value
+}: {
+  label: string;
+  value: string;
+}) {
+  return <div className="flex justify-between items-start py-3 border-b border-border/30">
       <span className="text-muted-foreground">{label}</span>
       <span className="text-foreground font-medium text-right max-w-[60%]">{value}</span>
-    </div>
-  );
+    </div>;
 }
-
-function StatCard({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="bg-card rounded-lg p-6 text-center border border-border/30">
+function StatCard({
+  value,
+  label
+}: {
+  value: string;
+  label: string;
+}) {
+  return <div className="bg-card rounded-lg p-6 text-center border border-border/30">
       <p className="text-2xl font-display font-bold text-primary mb-1">{value}</p>
       <p className="text-sm text-muted-foreground">{label}</p>
-    </div>
-  );
+    </div>;
 }
-
-function GovernanceCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
-  return (
-    <div className="bg-background rounded-lg p-6 border border-border/30">
+function GovernanceCard({
+  icon,
+  title,
+  description
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) {
+  return <div className="bg-background rounded-lg p-6 border border-border/30">
       <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
         {icon}
       </div>
       <h3 className="font-display font-semibold text-foreground mb-2">{title}</h3>
       <p className="text-sm text-muted-foreground">{description}</p>
-    </div>
-  );
+    </div>;
 }
-
-function TimelineCard({ period, title, description }: { period: string; title: string; description: string }) {
-  return (
-    <div className="text-center">
+function TimelineCard({
+  period,
+  title,
+  description
+}: {
+  period: string;
+  title: string;
+  description: string;
+}) {
+  return <div className="text-center">
       <div className="inline-flex items-center px-4 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
         {period}
       </div>
       <h4 className="font-display font-semibold text-lg text-foreground mb-2">{title}</h4>
       <p className="text-sm text-muted-foreground">{description}</p>
-    </div>
-  );
+    </div>;
 }
-
-function ComplianceCard({ title, description }: { title: string; description: string }) {
-  return (
-    <div className="bg-card rounded-lg p-6 text-center border border-border/30">
+function ComplianceCard({
+  title,
+  description
+}: {
+  title: string;
+  description: string;
+}) {
+  return <div className="bg-card rounded-lg p-6 text-center border border-border/30">
       <h3 className="font-display font-semibold text-lg text-primary mb-2">{title}</h3>
       <p className="text-sm text-muted-foreground">{description}</p>
-    </div>
-  );
+    </div>;
 }
