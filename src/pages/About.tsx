@@ -11,11 +11,11 @@ export default function About() {
         <div className="section-container">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-              About the Fund
+              About the Concept
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Reech Fund bridges a critical capital gap in global decarbonization, 
-              delivering institutional returns aligned with verified climate outcomes.
+              Reech Fund is exploring how to bridge a critical capital gap in global decarbonization, 
+              potentially delivering institutional returns aligned with verified climate outcomes.
             </p>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">
-                Why Reech Fund Exists
+                The Challenge We're Exploring
               </h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p>
@@ -39,9 +39,9 @@ export default function About() {
                   and require institutional-grade governance that most climate finance lacks.
                 </p>
                 <p>
-                  Reech Fund is designed for institutional capital seeking verified climate impact tied directly 
-                  to measurable outcomes, institutional-grade financial returns, and transparent, auditable 
-                  project performance.
+                  We're exploring whether Reech Fund could serve institutional capital seeking verified climate 
+                  impact tied directly to measurable outcomes, institutional-grade financial returns, and 
+                  transparent, auditable project performance.
                 </p>
               </div>
             </div>
@@ -50,7 +50,7 @@ export default function About() {
               <StatCard value="€100mm" label="Target Fund Size" />
               <StatCard value="7-10%" label="Target IRR" />
               <StatCard value="20+" label="Diversified Projects" />
-              <StatCard value="Q3 2026" label="First Close" />
+              <StatCard value="TBD" label="Timeline" />
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function About() {
               Climate Performance as a Financial Asset
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Reech Fund operates on a fundamental insight: climate impact should not be separate 
+              We're exploring a fundamental concept: climate impact should not be separate 
               from financial returns. It should be embedded in them.
             </p>
           </div>
@@ -75,8 +75,8 @@ export default function About() {
                 Financial Ledger
               </h3>
               <p className="text-muted-foreground mb-4">
-                Secured debt, preferred equity, or equity positions delivering 7-10% unlevered annual returns 
-                through coupons, dividends, and appreciation.
+                Secured debt, preferred equity, or equity positions potentially delivering 7-10% unlevered 
+                annual returns through coupons, dividends, and appreciation.
               </p>
             </div>
             <div className="bg-background rounded-lg p-8 border border-border/30">
@@ -84,8 +84,8 @@ export default function About() {
                 Impact Ledger
               </h3>
               <p className="text-muted-foreground mb-4">
-                Climate Emissions Units (CEUs) representing verified, quantified climate outcomes embedded 
-                directly in fund valuation.
+                Climate Emissions Units (CEUs) representing verified, quantified climate outcomes 
+                potentially embedded directly in fund valuation.
               </p>
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function About() {
           <div className="text-center mt-12">
             <Button asChild variant="cta">
               <Link to="/cpu-mechanism">
-                Learn About the CPU Mechanism
+                Explore the CPU Concept
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
@@ -106,7 +106,7 @@ export default function About() {
         <div className="section-container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
-              Who Invests in Reech Fund
+              Who This Is Designed For
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Designed for professional and institutional investors seeking diversified exposure 
@@ -139,7 +139,7 @@ export default function About() {
 
           <div className="text-center mt-8">
             <p className="text-muted-foreground">
-              Minimum subscription: <span className="font-semibold text-foreground">€5mm</span>
+              Proposed minimum subscription: <span className="font-semibold text-foreground">€5mm</span>
             </p>
           </div>
         </div>
@@ -151,10 +151,10 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">
-                Independent Management, Fiduciary Oversight
+                Proposed Governance Structure
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Reech Fund operates as an independent, professionally managed investment vehicle 
+                We're exploring operating as an independent, professionally managed investment vehicle 
                 under Luxembourg RAIF regulation.
               </p>
               <ul className="space-y-4 text-muted-foreground">
@@ -179,23 +179,23 @@ export default function About() {
 
             <div className="bg-background rounded-lg p-8 border border-border/30">
               <h3 className="font-display font-semibold text-xl text-foreground mb-6">
-                Fund Timeline
+                Proposed Timeline
               </h3>
               <div className="space-y-6">
                 <TimelineItem
-                  period="Q1-Q2 2026"
+                  period="Current"
+                  title="Exploration & Interest Gathering"
+                  description="Understanding market interest and refining the concept"
+                />
+                <TimelineItem
+                  period="Future"
                   title="Legal & Governance Setup"
-                  description="Final legal structure and anchor investor commitments"
+                  description="If sufficient interest, formal legal structure and governance"
                 />
                 <TimelineItem
-                  period="Q3 2026"
-                  title="First Close"
-                  description="€50mm target with fund launch"
-                />
-                <TimelineItem
-                  period="Q4 2026+"
-                  title="Capital Deployment"
-                  description="Ongoing fund management and investor reporting"
+                  period="Future"
+                  title="Fund Launch"
+                  description="Subject to regulatory approval and investor commitments"
                 />
               </div>
             </div>
@@ -207,11 +207,14 @@ export default function About() {
       <section className="section-spacing bg-primary">
         <div className="section-container text-center">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground mb-6">
-            Questions? We're Here to Help.
+            Have Questions or Want to Learn More?
           </h2>
+          <p className="text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
+            Contact us to discuss this concept and share your thoughts.
+          </p>
           <Button asChild variant="hero-outline">
             <Link to="/contact">
-              Contact Us
+              Request Information
               <ArrowRight className="w-5 h-5" />
             </Link>
           </Button>

@@ -18,7 +18,7 @@ export default function Strategy() {
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Three complementary investment pillars financing climate abatement across 
-              the global economy, each delivering institutional returns with verified impact.
+              the global economy, each targeting institutional returns with verified impact.
             </p>
           </div>
         </div>
@@ -40,11 +40,11 @@ export default function Strategy() {
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Supply partnerships for renewable electricity procurement, heat electrification, 
-                and energy-as-a-service (EaaS) models. These investments finance the large-scale 
+                and energy-as-a-service (EaaS) models. These investments would finance the large-scale 
                 energy infrastructure transformation of corporate facilities and supply chains.
               </p>
               
-              <h3 className="font-display font-semibold text-lg text-foreground mb-3">Real Examples</h3>
+              <h3 className="font-display font-semibold text-lg text-foreground mb-3">Example Projects</h3>
               <ul className="space-y-2 text-muted-foreground mb-8">
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
@@ -67,7 +67,7 @@ export default function Strategy() {
               <div className="grid grid-cols-2 gap-4">
                 <MetricCard label="Ticket Size" value="€5-20mm" />
                 <MetricCard label="Timeline" value="1.5-3 years" />
-                <MetricCard label="Returns" value="7-10% IRR" />
+                <MetricCard label="Target Returns" value="7-10% IRR" />
                 <MetricCard label="Instruments" value="Preferred equity, debt" />
               </div>
             </div>
@@ -107,11 +107,11 @@ export default function Strategy() {
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Supply chain decarbonization and circular economy enabling technologies. 
-                These investments finance the transformation of corporate logistics and 
+                These investments would finance the transformation of corporate logistics and 
                 material sourcing toward low-carbon, circular models.
               </p>
               
-              <h3 className="font-display font-semibold text-lg text-foreground mb-3">Real Examples</h3>
+              <h3 className="font-display font-semibold text-lg text-foreground mb-3">Example Projects</h3>
               <ul className="space-y-2 text-muted-foreground mb-8">
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
@@ -134,7 +134,7 @@ export default function Strategy() {
               <div className="grid grid-cols-2 gap-4">
                 <MetricCard label="Ticket Size" value="€5-20mm" />
                 <MetricCard label="Timeline" value="2-6 years" />
-                <MetricCard label="Returns" value="7-10% IRR" />
+                <MetricCard label="Target Returns" value="7-10% IRR" />
                 <MetricCard label="Instruments" value="Debt, equity" />
               </div>
             </div>
@@ -158,11 +158,11 @@ export default function Strategy() {
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Biodiversity restoration, carbon sequestration, and climate adaptation. 
-                These investments finance large-scale, long-duration nature-based projects 
+                These investments would finance large-scale, long-duration nature-based projects 
                 that deliver carbon removal, biodiversity gains, and resilience improvements.
               </p>
               
-              <h3 className="font-display font-semibold text-lg text-foreground mb-3">Real Examples</h3>
+              <h3 className="font-display font-semibold text-lg text-foreground mb-3">Example Projects</h3>
               <ul className="space-y-2 text-muted-foreground mb-8">
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
@@ -185,7 +185,7 @@ export default function Strategy() {
               <div className="grid grid-cols-2 gap-4">
                 <MetricCard label="Ticket Size" value="€5-20mm" />
                 <MetricCard label="Timeline" value="15-30 years" />
-                <MetricCard label="Returns" value="7-10% IRR" />
+                <MetricCard label="Target Returns" value="7-10% IRR" />
                 <MetricCard label="Instruments" value="Debt, equity" />
               </div>
             </div>
@@ -206,14 +206,14 @@ export default function Strategy() {
         <div className="section-container">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-8 text-center">
-              How We Select Projects
+              Proposed Project Selection Criteria
             </h2>
             
             <div className="space-y-6">
               <CriteriaCard
                 number="1"
                 title="Corporate Sourcing & Gate-3 Pre-Approval"
-                description="Projects are sourced from corporate sustainability initiatives that have passed internal gate-3 development approval—financially feasible, technically validated, and execution-ready."
+                description="Projects would be sourced from corporate sustainability initiatives that have passed internal gate-3 development approval—financially feasible, technically validated, and execution-ready."
               />
               <CriteriaCard
                 number="2"
@@ -244,11 +244,14 @@ export default function Strategy() {
       <section className="section-spacing bg-primary">
         <div className="section-container text-center">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground mb-6">
-            Learn How Impact Becomes Investable
+            Interested in These Investment Areas?
           </h2>
+          <p className="text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
+            Tell us which pillars interest you most and we'll follow up with more detailed information.
+          </p>
           <Button asChild variant="hero-outline">
-            <Link to="/cpu-mechanism">
-              Explore the CPU Mechanism
+            <Link to="/contact">
+              Share Your Interest
               <ArrowRight className="w-5 h-5" />
             </Link>
           </Button>

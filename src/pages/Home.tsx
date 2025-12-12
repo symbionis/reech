@@ -22,22 +22,22 @@ export default function Home() {
         <div className="relative section-container py-24 md:py-32 lg:py-40">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary-foreground mb-6 animate-fade-in text-balance">
-              Verified Climate Impact With Institutional Discipline
+              Exploring Climate Impact With Institutional Discipline
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 leading-relaxed animate-fade-in animate-fade-in-delay-1">
-              A digital fund financing large-scale corporate climate abatement initiatives with 
+              A concept for a digital fund financing large-scale corporate climate abatement initiatives with 
               institutional returns and auditable impact outcomes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animate-fade-in-delay-2">
               <Button asChild variant="hero">
                 <Link to="/strategy">
-                  Learn About Our Strategy
+                  Explore Our Approach
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
               <Button asChild variant="hero-outline">
                 <Link to="/cpu-mechanism">
-                  The CPU Mechanism
+                  The CPU Concept
                 </Link>
               </Button>
             </div>
@@ -57,7 +57,7 @@ export default function Home() {
             <ValueCard
               icon={<TrendingUp className="w-8 h-8 text-primary" />}
               title="Institutional Returns"
-              description="7-10% unlevered financial returns, diversified across three climate investment pillars."
+              description="Target 7-10% unlevered financial returns, diversified across three climate investment pillars."
             />
             <ValueCard
               icon={<Shield className="w-8 h-8 text-primary" />}
@@ -73,7 +73,7 @@ export default function Home() {
         <div className="section-container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-primary mb-4">
-              The Fund Strategy
+              The Investment Strategy
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               Three complementary investment pillars financing climate abatement across the global economy.
@@ -109,19 +109,19 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">
-                The CPU Mechanism
+                The CPU Concept
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Climate Performance Units (CPUs) represent a fundamental innovation in climate finance: 
-                fund shares that embed both financial returns and verified climate outcomes.
+                Climate Performance Units (CPUs) represent an innovative approach to climate finance: 
+                fund shares that could embed both financial returns and verified climate outcomes.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Unlike traditional funds that separate returns from impact reporting, CPUs create 
+                Unlike traditional funds that separate returns from impact reporting, CPUs aim to create 
                 inseparable alignment between investor performance and climate outcomes.
               </p>
               <Button asChild variant="cta">
                 <Link to="/cpu-mechanism">
-                  Explore the CPU Mechanism
+                  Explore the CPU Concept
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
@@ -181,7 +181,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-background rounded-lg p-8 border border-border/30">
               <h3 className="font-display font-semibold text-xl text-foreground mb-6">
-                Financial Targets
+                Target Financial Performance
               </h3>
               <ul className="space-y-4">
                 <li className="flex justify-between items-center py-2 border-b border-border/30">
@@ -205,7 +205,7 @@ export default function Home() {
 
             <div className="bg-background rounded-lg p-8 border border-border/30">
               <h3 className="font-display font-semibold text-xl text-foreground mb-6">
-                Risk Management
+                Risk Management Approach
               </h3>
               <ul className="space-y-3">
                 {[
@@ -240,7 +240,7 @@ export default function Home() {
         <div className="section-container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
-              Fund at a Glance
+              Proposed Fund Structure
             </h2>
           </div>
 
@@ -254,10 +254,10 @@ export default function Home() {
               </ul>
             </div>
             <div className="text-center">
-              <h3 className="font-display font-semibold text-lg text-foreground mb-4">Sizing</h3>
+              <h3 className="font-display font-semibold text-lg text-foreground mb-4">Target Sizing</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li>Target: €100mm</li>
-                <li>First Close: €50mm (Q3 2026)</li>
+                <li>First Close: €50mm</li>
                 <li>Min Subscription: €5mm</li>
               </ul>
             </div>
@@ -286,14 +286,15 @@ export default function Home() {
       <section className="section-spacing bg-primary">
         <div className="section-container text-center">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground mb-6">
-            Ready to Learn More?
+            Want to Stay Informed?
           </h2>
           <p className="text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
-            Contact us for more information about Reech Fund and how your organization can participate.
+            We're gathering interest from institutional parties who want to understand more 
+            about climate impact investing and the CPU concept.
           </p>
           <Button asChild variant="hero-outline">
             <Link to="/contact">
-              Get In Touch
+              Request Information
               <ArrowRight className="w-5 h-5" />
             </Link>
           </Button>
@@ -324,7 +325,7 @@ function PillarCard({ image, title, description, href }: { image: string; title:
         <h3 className="font-display font-semibold text-xl mb-2">{title}</h3>
         <p className="text-primary-foreground/80 text-sm mb-4">{description}</p>
         <span className="inline-flex items-center gap-2 text-sm font-medium">
-          Learn More <ArrowRight className="w-4 h-4" />
+          Explore <ArrowRight className="w-4 h-4" />
         </span>
       </div>
     </Link>

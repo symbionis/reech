@@ -14,7 +14,7 @@ export default function RiskReturns() {
               Risk & Returns
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Institutional returns aligned with verified impact through comprehensive 
+              Exploring institutional returns aligned with verified impact through comprehensive 
               risk management and transparent performance tracking.
             </p>
           </div>
@@ -39,7 +39,7 @@ export default function RiskReturns() {
 
           <div className="bg-card rounded-lg p-8 border border-border/50">
             <h3 className="font-display font-semibold text-xl text-foreground mb-6">
-              Return Sources
+              Proposed Return Sources
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">
@@ -80,7 +80,7 @@ export default function RiskReturns() {
         <div className="section-container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
-              Five Pillars of Risk Management
+              Proposed Risk Management Framework
             </h2>
           </div>
 
@@ -117,7 +117,7 @@ export default function RiskReturns() {
                 "Quarterly performance reports from project operators",
                 "Automated alerts for performance deviations",
                 "Milestone verification before capital tranches released",
-                "Transparent, blockchain-verified performance ledger",
+                "Transparent performance ledger",
               ]}
             />
             <RiskPillar
@@ -156,8 +156,8 @@ export default function RiskReturns() {
                 Verified, Auditable Climate Outcomes
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Impact credibility is as important as financial credibility. Reech Fund 
-                employs multiple layers of impact verification.
+                Impact credibility is as important as financial credibility. We're exploring 
+                multiple layers of impact verification.
               </p>
             </div>
 
@@ -176,7 +176,7 @@ export default function RiskReturns() {
               />
               <VerificationStep
                 title="Auditable Impact Ledger"
-                description="All CEUs recorded in transparent, blockchain-verified ledger with investor access."
+                description="All CEUs recorded in transparent ledger with investor access."
               />
               <VerificationStep
                 title="Impact Reporting"
@@ -192,7 +192,7 @@ export default function RiskReturns() {
         <div className="section-container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
-              Multi-Layer Safeguards for Investor Capital
+              Proposed Capital Protection Mechanisms
             </h2>
           </div>
 
@@ -224,10 +224,9 @@ export default function RiskReturns() {
             <p className="text-sm text-muted-foreground text-center">
               <strong className="text-foreground">Important:</strong> All investments carry risk. 
               Past performance is not indicative of future results. Climate impact outcomes are 
-              subject to market, regulatory, and execution risks. Reech Fund is a specialized 
-              investment vehicle appropriate only for professional and institutional investors 
-              with appropriate risk tolerance, investment horizon, and financial capacity. 
-              Investors may lose some or all of their investment.
+              subject to market, regulatory, and execution risks. This is exploratory information 
+              only. Reech Fund is not yet established or authorized. No investment decisions should 
+              be made based on this website. Investors may lose some or all of their investment.
             </p>
           </div>
         </div>
@@ -237,11 +236,14 @@ export default function RiskReturns() {
       <section className="section-spacing bg-primary">
         <div className="section-container text-center">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground mb-6">
-            Questions About Risk Management?
+            Want to Understand Our Risk Framework?
           </h2>
+          <p className="text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
+            Reach out to discuss how we approach institutional-grade risk management.
+          </p>
           <Button asChild variant="hero-outline">
             <Link to="/contact">
-              Contact Us
+              Request Information
               <ArrowRight className="w-5 h-5" />
             </Link>
           </Button>
