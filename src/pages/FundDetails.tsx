@@ -40,9 +40,7 @@ export default function FundDetails() {
       <section className="section-spacing bg-cream-light">
         <div className="section-container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
-              Proposed Governance Model
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">Governance Model</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -64,9 +62,7 @@ export default function FundDetails() {
               <div className="flex items-center gap-3 mb-4">
                 <Calendar className="w-6 h-6 text-primary" />
               </div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">
-                Target Fund Scale
-              </h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">Fund Scale & Launch Timeline</h2>
             </div>
 
             <div className="grid grid-cols-2 gap-6">
@@ -78,9 +74,7 @@ export default function FundDetails() {
           </div>
 
           <div className="mt-16">
-            <h3 className="font-display font-semibold text-xl text-foreground mb-8 text-center">
-              Proposed Timeline
-            </h3>
+            <h3 className="font-display font-semibold text-xl text-foreground mb-8 text-center">Timeline</h3>
             <div className="grid md:grid-cols-3 gap-8">
               <TimelineCard period="Current" title="Interest Gathering" description="Exploring market interest, refining concept, and building relationships" />
               <TimelineCard period="Future" title="Legal & Governance Setup" description="Subject to sufficient interest: legal structure, governance setup, anchor commitments" />
@@ -94,9 +88,7 @@ export default function FundDetails() {
       <section className="section-spacing bg-cream-light">
         <div className="section-container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
-              Proposed Project Eligibility Framework
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">Project Eligibility Framework</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -136,16 +128,12 @@ export default function FundDetails() {
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">
-                Target Terms & Investor Qualifications
-              </h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">Fund Terms & Investor Qualifications</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Designed for professional and institutional investors under AIFMD.
               </p>
               
-              <h3 className="font-display font-semibold text-lg text-foreground mb-4">
-                Target Qualified Investors
-              </h3>
+              <h3 className="font-display font-semibold text-lg text-foreground mb-4">Qualified Investors</h3>
               <ul className="space-y-2 text-muted-foreground mb-8">
                 <li>• Professional investors under AIFMD</li>
                 <li>• Institutional asset managers and allocators</li>
@@ -162,7 +150,7 @@ export default function FundDetails() {
 
             <div className="space-y-6">
               <div className="bg-card rounded-lg p-6 border border-border/30">
-                <h3 className="font-display font-semibold text-lg text-foreground mb-4">Proposed Fees</h3>
+                <h3 className="font-display font-semibold text-lg text-foreground mb-4">Fees</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Management Fee</span>
@@ -176,7 +164,7 @@ export default function FundDetails() {
               </div>
 
               <div className="bg-card rounded-lg p-6 border border-border/30">
-                <h3 className="font-display font-semibold text-lg text-foreground mb-4">Proposed Reporting</h3>
+                <h3 className="font-display font-semibold text-lg text-foreground mb-4">Reporting</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Quarterly</span>
@@ -190,7 +178,7 @@ export default function FundDetails() {
               </div>
 
               <div className="bg-card rounded-lg p-6 border border-border/30">
-                <h3 className="font-display font-semibold text-lg text-foreground mb-4">Proposed Liquidity</h3>
+                <h3 className="font-display font-semibold text-lg text-foreground mb-4">Liquidity</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Open-ended with periodic redemption windows</li>
                   <li>• 1-year initial lock-up period</li>
@@ -210,13 +198,8 @@ export default function FundDetails() {
               <div className="flex items-center gap-3 mb-4">
                 <Globe className="w-6 h-6 text-primary" />
               </div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">
-                Proposed Digital Infrastructure
-              </h2>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Fund shares would be digitized as Climate Performance Units (CPUs), 
-                potentially recognized as Real World Assets under AIFMD regulation.
-              </p>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">Digital Fund Shares & Trading Infrastructure</h2>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">Fund shares are digitized as Climate Performance Units (CPUs), recognized as Real World Assets under AIFMD regulation</p>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2" />
@@ -238,9 +221,7 @@ export default function FundDetails() {
             </div>
 
             <div className="bg-background rounded-lg p-8 border border-border/30">
-              <h3 className="font-display font-semibold text-xl text-foreground mb-6">
-                Proposed Custody Arrangement
-              </h3>
+              <h3 className="font-display font-semibold text-xl text-foreground mb-6">Custody Arrangement</h3>
               <div className="space-y-6">
                 <div>
                   <h4 className="font-semibold text-foreground mb-2">Fiat Custody</h4>
@@ -264,9 +245,7 @@ export default function FundDetails() {
       <section className="section-spacing bg-background">
         <div className="section-container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
-              Target Regulatory Alignment
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">Regulatory Alignment & Compliance</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
