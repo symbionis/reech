@@ -6,28 +6,20 @@ import heroImage from "@/assets/hero-solar.jpg";
 import pillarRenewable from "@/assets/pillar-renewable.jpg";
 import pillarLogistics from "@/assets/pillar-logistics.jpg";
 import pillarNature from "@/assets/pillar-nature.jpg";
-
 export default function Home() {
-  return (
-    <>
+  return <>
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${heroImage})`
+      }}>
           <div className="absolute inset-0 hero-gradient" />
         </div>
         
         <div className="relative section-container py-24 md:py-32 lg:py-40">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary-foreground mb-6 animate-fade-in text-balance">
-              Exploring Climate Impact With Institutional Discipline
-            </h1>
-            <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 leading-relaxed animate-fade-in animate-fade-in-delay-1">
-              A concept for a digital fund financing large-scale corporate climate abatement initiatives with 
-              institutional returns and auditable impact outcomes.
-            </p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary-foreground mb-6 animate-fade-in text-balance">Verified Climate Impact With Institutional Discipline</h1>
+            <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 leading-relaxed animate-fade-in animate-fade-in-delay-1">A digital fund financing large-scale corporate climate abatement initiatives with institutional returns and auditable impact outcomes.</p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animate-fade-in-delay-2">
               <Button asChild variant="hero">
                 <Link to="/strategy">
@@ -49,21 +41,9 @@ export default function Home() {
       <section className="section-spacing bg-background">
         <div className="section-container">
           <div className="grid md:grid-cols-3 gap-8">
-            <ValueCard
-              icon={<CheckCircle className="w-8 h-8 text-primary" />}
-              title="Verified Impact"
-              description="Corporate gate-3 approved projects with integrated monitoring and auditable climate outcomes."
-            />
-            <ValueCard
-              icon={<TrendingUp className="w-8 h-8 text-primary" />}
-              title="Institutional Returns"
-              description="Target 7-10% unlevered financial returns, diversified across three climate investment pillars."
-            />
-            <ValueCard
-              icon={<Shield className="w-8 h-8 text-primary" />}
-              title="Risk Management"
-              description="Comprehensive due diligence, insurance integration, and portfolio-level safeguards."
-            />
+            <ValueCard icon={<CheckCircle className="w-8 h-8 text-primary" />} title="Verified Impact" description="Corporate gate-3 approved projects with integrated monitoring and auditable climate outcomes." />
+            <ValueCard icon={<TrendingUp className="w-8 h-8 text-primary" />} title="Institutional Returns" description="Target 7-10% unlevered financial returns, diversified across three climate investment pillars." />
+            <ValueCard icon={<Shield className="w-8 h-8 text-primary" />} title="Risk Management" description="Comprehensive due diligence, insurance integration, and portfolio-level safeguards." />
           </div>
         </div>
       </section>
@@ -81,24 +61,9 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <PillarCard
-              image={pillarRenewable}
-              title="Renewable Energy, Energy Transition, ESCO"
-              description="Supply partnerships for renewable procurement, heat electrification, and energy services."
-              href="/strategy#renewable"
-            />
-            <PillarCard
-              image={pillarLogistics}
-              title="Logistics, Circular Materials"
-              description="Supply chain decarbonization and circular economy enabling technologies."
-              href="/strategy#logistics"
-            />
-            <PillarCard
-              image={pillarNature}
-              title="Nature-based Solutions"
-              description="Biodiversity restoration, carbon sequestration, and climate adaptation."
-              href="/strategy#nature"
-            />
+            <PillarCard image={pillarRenewable} title="Renewable Energy, Energy Transition, ESCO" description="Supply partnerships for renewable procurement, heat electrification, and energy services." href="/strategy#renewable" />
+            <PillarCard image={pillarLogistics} title="Logistics, Circular Materials" description="Supply chain decarbonization and circular economy enabling technologies." href="/strategy#logistics" />
+            <PillarCard image={pillarNature} title="Nature-based Solutions" description="Biodiversity restoration, carbon sequestration, and climate adaptation." href="/strategy#nature" />
           </div>
         </div>
       </section>
@@ -208,18 +173,10 @@ export default function Home() {
                 Risk Management Approach
               </h3>
               <ul className="space-y-3">
-                {[
-                  "Project due diligence with gate-3 pre-approval",
-                  "Comprehensive risk assessment & quantification",
-                  "Real-time integrated monitoring",
-                  "Insurance integration & backstops",
-                  "Portfolio-level diversification controls",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
+                {["Project due diligence with gate-3 pre-approval", "Comprehensive risk assessment & quantification", "Real-time integrated monitoring", "Insurance integration & backstops", "Portfolio-level diversification controls"].map((item, i) => <li key={i} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">{item}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
           </div>
@@ -300,25 +257,37 @@ export default function Home() {
           </Button>
         </div>
       </section>
-    </>
-  );
+    </>;
 }
-
-function ValueCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
-  return (
-    <div className="card-institutional text-center">
+function ValueCard({
+  icon,
+  title,
+  description
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) {
+  return <div className="card-institutional text-center">
       <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6">
         {icon}
       </div>
       <h3 className="font-display font-semibold text-xl text-foreground mb-3">{title}</h3>
       <p className="text-muted-foreground leading-relaxed">{description}</p>
-    </div>
-  );
+    </div>;
 }
-
-function PillarCard({ image, title, description, href }: { image: string; title: string; description: string; href: string }) {
-  return (
-    <Link to={href} className="pillar-card group">
+function PillarCard({
+  image,
+  title,
+  description,
+  href
+}: {
+  image: string;
+  title: string;
+  description: string;
+  href: string;
+}) {
+  return <Link to={href} className="pillar-card group">
       <img src={image} alt={title} className="pillar-card-image" />
       <div className="pillar-card-overlay" />
       <div className="pillar-card-content">
@@ -328,6 +297,5 @@ function PillarCard({ image, title, description, href }: { image: string; title:
           Explore <ArrowRight className="w-4 h-4" />
         </span>
       </div>
-    </Link>
-  );
+    </Link>;
 }
