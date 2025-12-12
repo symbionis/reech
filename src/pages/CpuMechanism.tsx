@@ -2,21 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp, CheckCircle, FileCheck, Lock, Users } from "lucide-react";
-
 export default function CpuMechanism() {
-  return (
-    <>
+  return <>
       {/* Hero */}
       <section className="bg-cream-light section-spacing">
         <div className="section-container">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-              The CPU Concept
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Exploring How Climate Impact Could Become Investable — Climate Performance Units 
-              aim to embed both financial returns and verified climate outcomes into a single, auditable asset.
-            </p>
+            <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">The CPU Mechanism</h1>
+            <p className="text-xl text-muted-foreground leading-relaxed">How Climate Impact Becomes Investable — Climate Performance Units embed both financial returns and verified climate outcomes into a single, auditable asset.</p>
           </div>
         </div>
       </section>
@@ -30,26 +23,14 @@ export default function CpuMechanism() {
                 What is a Climate Performance Unit?
               </h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p>
-                  A Climate Performance Unit (CPU) is a concept for a digitized fund share representing 
-                  fractional ownership of a portfolio of climate abatement projects.
-                </p>
-                <p>
-                  The innovation: CPUs would be valued not only by project cash flows, but also by 
-                  verified climate outcomes. This dual-value approach aims to transform climate impact 
-                  from an ESG metric into a material driver of investor returns.
-                </p>
-                <p>
-                  This is an exploratory concept that we're developing and testing with institutional 
-                  investors to understand interest and refine the approach.
-                </p>
+                <p>A Climate Performance Unit (CPU) is a digitized fund share representing fractional ownership of Reech Fund's portfolio of climate abatement projects.</p>
+                <p>But CPUs are not just tokenized shares. They embed a unique financial mechanism: CPUs are valued not only by project cash flows, but by verified climate outcomes.</p>
+                <p>This dual-value approach transforms climate impact from an ESG metric into a material driver of investor returns.</p>
               </div>
             </div>
 
             <div className="bg-card rounded-lg p-8 border border-border/50">
-              <h3 className="font-display font-semibold text-xl text-foreground mb-6 text-center">
-                Proposed CPU Value Equation
-              </h3>
+              <h3 className="font-display font-semibold text-xl text-foreground mb-6 text-center">CPU Value Equation</h3>
               <div className="space-y-4">
                 <div className="p-4 bg-background rounded-md border border-border/30">
                   <div className="flex items-center gap-3 mb-2">
@@ -140,9 +121,7 @@ export default function CpuMechanism() {
       <section className="section-spacing bg-background">
         <div className="section-container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
-              CEC vs CEU: Two Proposed Units of Climate Value
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">CEC vs CEU: The Two Units of Climate Value</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -182,8 +161,7 @@ export default function CpuMechanism() {
           <div className="max-w-3xl mx-auto mt-12">
             <div className="bg-cream-light rounded-lg p-8 text-center">
               <h4 className="font-display font-semibold text-lg text-foreground mb-3">Why Both Would Matter</h4>
-              <p className="text-muted-foreground">
-                <strong className="text-foreground">CECs</strong> would provide credibility at investment selection. 
+              <p className="text-muted-foreground">CECs provide credibility at investment selection. CEUs provide accountability during execution. Together, they aim to ensure climate promises become climate outcomes.<strong className="text-foreground">CECs</strong> would provide credibility at investment selection. 
                 <strong className="text-foreground"> CEUs</strong> would provide accountability during execution. 
                 Together, they aim to ensure climate promises become climate outcomes.
               </p>
@@ -196,38 +174,16 @@ export default function CpuMechanism() {
       <section className="section-spacing bg-cream-light">
         <div className="section-container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
-              Proposed Verification Process
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">From Commitment to Verified Impact</h2>
           </div>
 
           <div className="max-w-4xl mx-auto">
             <div className="space-y-6">
-              <ProcessStep
-                number="1"
-                title="Sourcing & Commitment"
-                description="Project sourced from corporate sustainability initiative. CEC issued quantifying expected climate benefit."
-              />
-              <ProcessStep
-                number="2"
-                title="Capital Deployment"
-                description="Fund invests through debt, preferred equity, or equity. Project executes toward commercial operation."
-              />
-              <ProcessStep
-                number="3"
-                title="Continuous Monitoring"
-                description="Integrated real-time systems track project performance. Automated alerts for deviations."
-              />
-              <ProcessStep
-                number="4"
-                title="Annual Validation"
-                description="Independent third-party verifies monitoring data. Climate outcomes calculated using standardized methodologies."
-              />
-              <ProcessStep
-                number="5"
-                title="CEU Issuance"
-                description="CEUs issued and recorded in auditable ledger. Fund NAV updated to reflect verified climate value."
-              />
+              <ProcessStep number="1" title="Sourcing & Commitment" description="Project sourced from corporate sustainability initiative. CEC issued quantifying expected climate benefit." />
+              <ProcessStep number="2" title="Capital Deployment" description="Fund invests through debt, preferred equity, or equity. Project executes toward commercial operation." />
+              <ProcessStep number="3" title="Continuous Monitoring" description="Integrated real-time systems track project performance. Automated alerts for deviations." />
+              <ProcessStep number="4" title="Annual Validation" description="Independent third-party verifies monitoring data. Climate outcomes calculated using standardized methodologies." />
+              <ProcessStep number="5" title="CEU Issuance" description="CEUs issued and recorded in auditable ledger. Fund NAV updated to reflect verified climate value." />
             </div>
           </div>
         </div>
@@ -241,13 +197,8 @@ export default function CpuMechanism() {
               <div className="flex items-center gap-3 mb-4">
                 <Lock className="w-6 h-6 text-primary" />
               </div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">
-                Transparent, Auditable Records
-              </h2>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Every CEC and CEU would be recorded in an auditable ledger 
-                accessible to investors and auditors.
-              </p>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">Transparent, Auditable, Blockchain-Verified</h2>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">Every CEC and CEU is recorded in an auditable, blockchain-verified ledger accessible to investors and auditors</p>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
@@ -269,9 +220,7 @@ export default function CpuMechanism() {
             </div>
 
             <div className="bg-card rounded-lg p-8 border border-border/50">
-              <h3 className="font-display font-semibold text-xl text-foreground mb-6">
-                Proposed Ledger Records
-              </h3>
+              <h3 className="font-display font-semibold text-xl text-foreground mb-6">Ledger Records Include</h3>
               <ul className="space-y-3 text-muted-foreground text-sm">
                 <li className="flex justify-between py-2 border-b border-border/30">
                   <span>Project identifier</span>
@@ -307,37 +256,15 @@ export default function CpuMechanism() {
       <section className="section-spacing bg-cream-light">
         <div className="section-container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
-              Potential Benefits for Investors
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">Why This Matters for Investors</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <BenefitCard
-              icon={<Users className="w-6 h-6" />}
-              title="Aligned Incentives"
-              description="Financial performance and climate performance would be the same goal. No conflict between returns and impact."
-            />
-            <BenefitCard
-              icon={<TrendingUp className="w-6 h-6" />}
-              title="Dual-Source Returns"
-              description="Returns would flow from project cash flows AND climate outcome verification—diversification of return sources."
-            />
-            <BenefitCard
-              icon={<FileCheck className="w-6 h-6" />}
-              title="Transparent Accountability"
-              description="Climate impact would be quantified, verified, auditable, material to returns, and investor-accessible."
-            />
-            <BenefitCard
-              icon={<Lock className="w-6 h-6" />}
-              title="Regulatory Credibility"
-              description="AIFMD compliance, SFDR standards, ISO 14064 methodology, third-party audit standards."
-            />
-            <BenefitCard
-              icon={<ArrowRight className="w-6 h-6" />}
-              title="Market Optionality"
-              description="CPUs could be tradeable on secondary markets. 24/7 trading capability on compliant platforms."
-            />
+            <BenefitCard icon={<Users className="w-6 h-6" />} title="Aligned Incentives" description="Financial performance and climate performance would be the same goal. No conflict between returns and impact." />
+            <BenefitCard icon={<TrendingUp className="w-6 h-6" />} title="Dual-Source Returns" description="Returns would flow from project cash flows AND climate outcome verification—diversification of return sources." />
+            <BenefitCard icon={<FileCheck className="w-6 h-6" />} title="Transparent Accountability" description="Climate impact would be quantified, verified, auditable, material to returns, and investor-accessible." />
+            <BenefitCard icon={<Lock className="w-6 h-6" />} title="Regulatory Credibility" description="AIFMD compliance, SFDR standards, ISO 14064 methodology, third-party audit standards." />
+            <BenefitCard icon={<ArrowRight className="w-6 h-6" />} title="Market Optionality" description="CPUs could be tradeable on secondary markets. 24/7 trading capability on compliant platforms." />
           </div>
         </div>
       </section>
@@ -359,13 +286,18 @@ export default function CpuMechanism() {
           </Button>
         </div>
       </section>
-    </>
-  );
+    </>;
 }
-
-function ProcessStep({ number, title, description }: { number: string; title: string; description: string }) {
-  return (
-    <div className="flex gap-6 items-start">
+function ProcessStep({
+  number,
+  title,
+  description
+}: {
+  number: string;
+  title: string;
+  description: string;
+}) {
+  return <div className="flex gap-6 items-start">
       <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
         <span className="text-primary-foreground font-display font-bold text-lg">{number}</span>
       </div>
@@ -373,18 +305,22 @@ function ProcessStep({ number, title, description }: { number: string; title: st
         <h3 className="font-display font-semibold text-lg text-foreground mb-2">{title}</h3>
         <p className="text-muted-foreground">{description}</p>
       </div>
-    </div>
-  );
+    </div>;
 }
-
-function BenefitCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
-  return (
-    <div className="bg-background rounded-lg p-6 border border-border/30">
+function BenefitCard({
+  icon,
+  title,
+  description
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) {
+  return <div className="bg-background rounded-lg p-6 border border-border/30">
       <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
         {icon}
       </div>
       <h3 className="font-display font-semibold text-lg text-foreground mb-2">{title}</h3>
       <p className="text-muted-foreground text-sm">{description}</p>
-    </div>
-  );
+    </div>;
 }
