@@ -27,7 +27,7 @@ export default function FundDetails() {
             </div>
 
             <div className="space-y-6">
-              <DetailRow label="Proposed Vehicle" value="Reserved Alternative Investment Fund (RAIF)" />
+              <DetailRow label="Vehicle" value="Reserved Alternative Investment Fund (RAIF)" />
               <DetailRow label="Domicile" value="Luxembourg" />
               <DetailRow label="Regulation" value="AIFMD (Alternative Investment Fund Managers Directive)" />
               <DetailRow label="Target Status" value="EU passporting rights for professional investors across EEA" />
