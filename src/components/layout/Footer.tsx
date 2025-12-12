@@ -9,7 +9,7 @@ const footerLinks = {
     { name: "Fund Details", href: "/fund-details" },
   ],
   legal: [
-    { name: "Contact", href: "/contact" },
+    { name: "Request Information", href: "/contact" },
     { name: "Privacy Policy", href: "/privacy" },
     { name: "Legal Disclaimer", href: "/legal" },
   ],
@@ -18,7 +18,31 @@ const footerLinks = {
 export function Footer() {
   return (
     <footer className="bg-foreground text-primary-foreground">
-      <div className="section-container py-16 md:py-20">
+      {/* Global Disclaimer */}
+      <div className="border-b border-primary-foreground/10">
+        <div className="section-container py-8">
+          <div className="max-w-4xl">
+            <h4 className="font-display font-semibold text-sm uppercase tracking-wider mb-4 text-primary-foreground/80">
+              Disclaimer
+            </h4>
+            <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
+              This website is provided for informational purposes only to explore and discuss 
+              climate investment concepts. It does not constitute an offer or invitation to invest, 
+              financial, legal, or investment advice, or a prospectus or fund document.
+            </p>
+            <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
+              Reech Fund is not yet established or authorized. No investment decisions should be 
+              made based on this website. By using this site, you acknowledge that you have read 
+              and understood this disclaimer.
+            </p>
+            <p className="text-primary-foreground/50 text-xs">
+              For institutional inquiries only. | <Link to="/privacy" className="hover:text-primary-foreground">Privacy Policy</Link> | <Link to="/legal" className="hover:text-primary-foreground">Terms of Use</Link>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="section-container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
@@ -29,15 +53,15 @@ export function Footer() {
               <span className="font-display font-bold text-xl">Reech Fund</span>
             </Link>
             <p className="text-primary-foreground/70 max-w-md leading-relaxed">
-              Verified climate impact with institutional discipline. A digital fund financing
-              large-scale corporate climate abatement initiatives.
+              Exploring climate impact investing with institutional discipline. 
+              An informational exploration of digital fund concepts for climate abatement.
             </p>
           </div>
 
           {/* Fund Links */}
           <div>
             <h4 className="font-display font-semibold text-sm uppercase tracking-wider mb-6 text-primary-foreground/90">
-              The Fund
+              Explore
             </h4>
             <ul className="space-y-3">
               {footerLinks.fund.map((link) => (
@@ -74,15 +98,13 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-16 pt-8 border-t border-primary-foreground/10">
+        <div className="mt-12 pt-8 border-t border-primary-foreground/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/50 text-sm">
               © {new Date().getFullYear()} Reech Fund. All rights reserved.
             </p>
-            <p className="text-primary-foreground/50 text-xs max-w-2xl text-center md:text-right">
-              Reech Fund is a Reserved Alternative Investment Fund (RAIF) domiciled in Luxembourg.
-              This website is for informational purposes only and does not constitute an offer to sell
-              or a solicitation of an offer to buy any securities.
+            <p className="text-primary-foreground/40 text-xs">
+              Exploratory information only. Not an investment offering.
             </p>
           </div>
         </div>

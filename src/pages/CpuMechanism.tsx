@@ -11,11 +11,11 @@ export default function CpuMechanism() {
         <div className="section-container">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-              The CPU Mechanism
+              The CPU Concept
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              How Climate Impact Becomes Investable — Climate Performance Units embed both 
-              financial returns and verified climate outcomes into a single, auditable asset.
+              Exploring How Climate Impact Could Become Investable — Climate Performance Units 
+              aim to embed both financial returns and verified climate outcomes into a single, auditable asset.
             </p>
           </div>
         </div>
@@ -31,23 +31,24 @@ export default function CpuMechanism() {
               </h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p>
-                  A Climate Performance Unit (CPU) is a digitized fund share representing fractional 
-                  ownership of Reech Fund's portfolio of climate abatement projects.
+                  A Climate Performance Unit (CPU) is a concept for a digitized fund share representing 
+                  fractional ownership of a portfolio of climate abatement projects.
                 </p>
                 <p>
-                  But CPUs are not just tokenized shares. They embed a unique financial mechanism: 
-                  CPUs are valued not only by project cash flows, but by verified climate outcomes.
+                  The innovation: CPUs would be valued not only by project cash flows, but also by 
+                  verified climate outcomes. This dual-value approach aims to transform climate impact 
+                  from an ESG metric into a material driver of investor returns.
                 </p>
                 <p>
-                  This dual-value approach transforms climate impact from an ESG metric into a 
-                  material driver of investor returns.
+                  This is an exploratory concept that we're developing and testing with institutional 
+                  investors to understand interest and refine the approach.
                 </p>
               </div>
             </div>
 
             <div className="bg-card rounded-lg p-8 border border-border/50">
               <h3 className="font-display font-semibold text-xl text-foreground mb-6 text-center">
-                CPU Value Equation
+                Proposed CPU Value Equation
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-background rounded-md border border-border/30">
@@ -81,7 +82,7 @@ export default function CpuMechanism() {
         <div className="section-container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
-              The Dual Ledger
+              The Dual Ledger Concept
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Financial returns and climate impact, inseparable.
@@ -126,7 +127,7 @@ export default function CpuMechanism() {
 
           <div className="max-w-2xl mx-auto mt-8">
             <div className="bg-primary/5 rounded-lg p-6 border-2 border-primary/20 text-center">
-              <p className="text-lg font-semibold text-foreground mb-2">Combined CPU Return</p>
+              <p className="text-lg font-semibold text-foreground mb-2">Illustrative Combined CPU Return</p>
               <p className="text-muted-foreground">
                 Financial: €400,000 + Climate: €156,250 = <span className="text-primary font-bold">€556,250 (5.6%)</span>
               </p>
@@ -140,7 +141,7 @@ export default function CpuMechanism() {
         <div className="section-container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
-              CEC vs CEU: The Two Units of Climate Value
+              CEC vs CEU: Two Proposed Units of Climate Value
             </h2>
           </div>
 
@@ -180,11 +181,11 @@ export default function CpuMechanism() {
 
           <div className="max-w-3xl mx-auto mt-12">
             <div className="bg-cream-light rounded-lg p-8 text-center">
-              <h4 className="font-display font-semibold text-lg text-foreground mb-3">Why Both Matter</h4>
+              <h4 className="font-display font-semibold text-lg text-foreground mb-3">Why Both Would Matter</h4>
               <p className="text-muted-foreground">
-                <strong className="text-foreground">CECs</strong> provide credibility at investment selection. 
-                <strong className="text-foreground"> CEUs</strong> provide accountability during execution. 
-                Together, they ensure climate promises become climate outcomes.
+                <strong className="text-foreground">CECs</strong> would provide credibility at investment selection. 
+                <strong className="text-foreground"> CEUs</strong> would provide accountability during execution. 
+                Together, they aim to ensure climate promises become climate outcomes.
               </p>
             </div>
           </div>
@@ -196,7 +197,7 @@ export default function CpuMechanism() {
         <div className="section-container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
-              From Commitment to Verified Impact
+              Proposed Verification Process
             </h2>
           </div>
 
@@ -241,10 +242,10 @@ export default function CpuMechanism() {
                 <Lock className="w-6 h-6 text-primary" />
               </div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">
-                Transparent, Auditable, Blockchain-Verified
+                Transparent, Auditable Records
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Every CEC and CEU is recorded in an auditable, blockchain-verified ledger 
+                Every CEC and CEU would be recorded in an auditable ledger 
                 accessible to investors and auditors.
               </p>
               <ul className="space-y-3 text-muted-foreground">
@@ -269,7 +270,7 @@ export default function CpuMechanism() {
 
             <div className="bg-card rounded-lg p-8 border border-border/50">
               <h3 className="font-display font-semibold text-xl text-foreground mb-6">
-                Ledger Records Include
+                Proposed Ledger Records
               </h3>
               <ul className="space-y-3 text-muted-foreground text-sm">
                 <li className="flex justify-between py-2 border-b border-border/30">
@@ -307,7 +308,7 @@ export default function CpuMechanism() {
         <div className="section-container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
-              Why This Matters for Investors
+              Potential Benefits for Investors
             </h2>
           </div>
 
@@ -315,17 +316,17 @@ export default function CpuMechanism() {
             <BenefitCard
               icon={<Users className="w-6 h-6" />}
               title="Aligned Incentives"
-              description="Financial performance and climate performance are the same goal. No conflict between returns and impact."
+              description="Financial performance and climate performance would be the same goal. No conflict between returns and impact."
             />
             <BenefitCard
               icon={<TrendingUp className="w-6 h-6" />}
               title="Dual-Source Returns"
-              description="Returns flow from project cash flows AND climate outcome verification—diversification of return sources."
+              description="Returns would flow from project cash flows AND climate outcome verification—diversification of return sources."
             />
             <BenefitCard
               icon={<FileCheck className="w-6 h-6" />}
               title="Transparent Accountability"
-              description="Climate impact is quantified, verified, auditable, material to returns, and investor-accessible."
+              description="Climate impact would be quantified, verified, auditable, material to returns, and investor-accessible."
             />
             <BenefitCard
               icon={<Lock className="w-6 h-6" />}
@@ -335,7 +336,7 @@ export default function CpuMechanism() {
             <BenefitCard
               icon={<ArrowRight className="w-6 h-6" />}
               title="Market Optionality"
-              description="CPUs are tradeable on secondary markets. 24/7 trading capability on compliant platforms."
+              description="CPUs could be tradeable on secondary markets. 24/7 trading capability on compliant platforms."
             />
           </div>
         </div>
@@ -345,11 +346,14 @@ export default function CpuMechanism() {
       <section className="section-spacing bg-primary">
         <div className="section-container text-center">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground mb-6">
-            Ready to Invest in Verified Climate Impact?
+            Curious About the CPU Model?
           </h2>
+          <p className="text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
+            We'd love to discuss this innovative approach to climate finance.
+          </p>
           <Button asChild variant="hero-outline">
             <Link to="/contact">
-              Contact Us to Learn More
+              Request Discussion
               <ArrowRight className="w-5 h-5" />
             </Link>
           </Button>

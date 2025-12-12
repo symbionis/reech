@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { toast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, AlertTriangle } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -16,8 +16,8 @@ export default function Contact() {
     message: "",
     interests: {
       general: false,
-      investment: false,
-      partnership: false,
+      cpuMechanism: false,
+      strategy: false,
       other: false,
     },
   });
@@ -31,8 +31,8 @@ export default function Contact() {
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
     toast({
-      title: "Message Sent",
-      description: "Thank you. We'll be in touch within 2 business days.",
+      title: "Thank You for Your Interest",
+      description: "We'll review your inquiry and respond with further information at an appropriate time. Note: This is an informational exploration only.",
     });
 
     setFormData({
@@ -43,8 +43,8 @@ export default function Contact() {
       message: "",
       interests: {
         general: false,
-        investment: false,
-        partnership: false,
+        cpuMechanism: false,
+        strategy: false,
         other: false,
       },
     });
@@ -58,11 +58,11 @@ export default function Contact() {
         <div className="section-container">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-              Contact
+              Request Information
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Questions? We're here to help. Reach out to learn more about Reech Fund 
-              and how your organization can participate.
+              Share your interest or questions about Reech Fund, our climate investment approach, 
+              or the CPU mechanism. We'll respond with further details.
             </p>
           </div>
         </div>
@@ -74,10 +74,33 @@ export default function Contact() {
           <div className="grid lg:grid-cols-3 gap-12 lg:gap-20">
             {/* Form */}
             <div className="lg:col-span-2">
+              {/* Intro Text */}
+              <div className="bg-cream-light rounded-lg p-6 border border-border/30 mb-8">
+                <p className="text-muted-foreground leading-relaxed">
+                  We're exploring climate finance innovation through digital fund concepts. If you're 
+                  interested in learning more about our approach to climate impact investing, climate 
+                  performance units, or our investment strategy, please share your inquiry below.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mt-4">
+                  We'll respond with additional information and discussion at an appropriate time. 
+                  <strong className="text-foreground"> This is an informational exploration only—no investment 
+                  opportunity is being offered at this time.</strong>
+                </p>
+              </div>
+
+              {/* Retail Investor Warning */}
+              <div className="bg-destructive/5 rounded-lg p-4 border border-destructive/20 mb-8 flex items-start gap-3">
+                <AlertTriangle className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
+                <p className="text-sm text-destructive/80">
+                  <strong>Notice:</strong> This form is intended for institutional and professional parties only. 
+                  If you are a retail investor, please do not complete this form.
+                </p>
+              </div>
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Name *</Label>
+                    <Label htmlFor="name">Full Name *</Label>
                     <Input
                       id="name"
                       required
@@ -123,11 +146,12 @@ export default function Contact() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message">Message *</Label>
+                  <Label htmlFor="message">Your Inquiry *</Label>
                   <Textarea
                     id="message"
                     required
                     rows={6}
+                    placeholder="Please share your questions or what aspects of Reech Fund interest you..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   />
@@ -148,37 +172,37 @@ export default function Contact() {
                         }
                       />
                       <Label htmlFor="general" className="font-normal">
-                        General fund inquiry
+                        General fund concept
                       </Label>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Checkbox
-                        id="investment"
-                        checked={formData.interests.investment}
+                        id="cpuMechanism"
+                        checked={formData.interests.cpuMechanism}
                         onCheckedChange={(checked) =>
                           setFormData({
                             ...formData,
-                            interests: { ...formData.interests, investment: checked as boolean },
+                            interests: { ...formData.interests, cpuMechanism: checked as boolean },
                           })
                         }
                       />
-                      <Label htmlFor="investment" className="font-normal">
-                        Investment inquiry
+                      <Label htmlFor="cpuMechanism" className="font-normal">
+                        CPU mechanism
                       </Label>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Checkbox
-                        id="partnership"
-                        checked={formData.interests.partnership}
+                        id="strategy"
+                        checked={formData.interests.strategy}
                         onCheckedChange={(checked) =>
                           setFormData({
                             ...formData,
-                            interests: { ...formData.interests, partnership: checked as boolean },
+                            interests: { ...formData.interests, strategy: checked as boolean },
                           })
                         }
                       />
-                      <Label htmlFor="partnership" className="font-normal">
-                        Partnership opportunity
+                      <Label htmlFor="strategy" className="font-normal">
+                        Investment strategy
                       </Label>
                     </div>
                     <div className="flex items-center space-x-2">
@@ -200,12 +224,13 @@ export default function Contact() {
                 </div>
 
                 <Button type="submit" disabled={isSubmitting} className="w-full md:w-auto">
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  {isSubmitting ? "Sending..." : "Submit Inquiry"}
                 </Button>
 
                 <p className="text-xs text-muted-foreground">
-                  By submitting this form, you confirm you are a qualified institutional investor 
-                  and have read our Privacy Policy and Risk Disclaimers.
+                  By submitting this form, you confirm you are a sophisticated, professional, or institutional 
+                  party and have read and understood the disclaimers on this website. This is an informational 
+                  inquiry only and does not constitute an investment commitment or application.
                 </p>
               </form>
             </div>
@@ -255,8 +280,16 @@ export default function Contact() {
               <div className="bg-cream-light rounded-lg p-6 border border-border/30">
                 <h4 className="font-semibold text-foreground mb-2">Response Time</h4>
                 <p className="text-sm text-muted-foreground">
-                  We typically respond within 2 business days. For urgent matters, 
-                  please indicate in your message.
+                  We'll review your inquiry and respond with further information at an appropriate time. 
+                  We will only contact you once Reech Fund has been formally established and properly authorized.
+                </p>
+              </div>
+
+              <div className="bg-primary/5 rounded-lg p-6 border border-primary/20">
+                <h4 className="font-semibold text-foreground mb-2">Important Notice</h4>
+                <p className="text-sm text-muted-foreground">
+                  This is an informational exploration only. Reech Fund is not yet established or authorized. 
+                  No investment opportunity is being offered at this time.
                 </p>
               </div>
             </div>
