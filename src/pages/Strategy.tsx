@@ -5,10 +5,8 @@ import { ArrowRight, Sun, Truck, TreeDeciduous, CheckCircle } from "lucide-react
 import pillarRenewable from "@/assets/pillar-renewable.jpg";
 import pillarLogistics from "@/assets/pillar-logistics.jpg";
 import pillarNature from "@/assets/pillar-nature.jpg";
-
 export default function Strategy() {
-  return (
-    <>
+  return <>
       {/* Hero */}
       <section className="bg-cream-light section-spacing">
         <div className="section-container">
@@ -73,11 +71,7 @@ export default function Strategy() {
             </div>
 
             <div className="order-1 lg:order-2">
-              <img 
-                src={pillarRenewable} 
-                alt="Solar panel installation on industrial facility" 
-                className="w-full h-80 lg:h-[500px] object-cover rounded-lg shadow-institutional-lg"
-              />
+              <img src={pillarRenewable} alt="Solar panel installation on industrial facility" className="w-full h-80 lg:h-[500px] object-cover rounded-lg shadow-institutional-lg" />
             </div>
           </div>
         </div>
@@ -88,11 +82,7 @@ export default function Strategy() {
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
-              <img 
-                src={pillarLogistics} 
-                alt="Electric trucks at charging station" 
-                className="w-full h-80 lg:h-[500px] object-cover rounded-lg shadow-institutional-lg"
-              />
+              <img src={pillarLogistics} alt="Electric trucks at charging station" className="w-full h-80 lg:h-[500px] object-cover rounded-lg shadow-institutional-lg" />
             </div>
 
             <div>
@@ -191,11 +181,7 @@ export default function Strategy() {
             </div>
 
             <div className="order-1 lg:order-2">
-              <img 
-                src={pillarNature} 
-                alt="Forest restoration project" 
-                className="w-full h-80 lg:h-[500px] object-cover rounded-lg shadow-institutional-lg"
-              />
+              <img src={pillarNature} alt="Forest restoration project" className="w-full h-80 lg:h-[500px] object-cover rounded-lg shadow-institutional-lg" />
             </div>
           </div>
         </div>
@@ -205,36 +191,14 @@ export default function Strategy() {
       <section className="section-spacing bg-cream-light">
         <div className="section-container">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-8 text-center">
-              Proposed Project Selection Criteria
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-8 text-center">Project Selection Criteria</h2>
             
             <div className="space-y-6">
-              <CriteriaCard
-                number="1"
-                title="Corporate Sourcing & Gate-3 Pre-Approval"
-                description="Projects would be sourced from corporate sustainability initiatives that have passed internal gate-3 development approval—financially feasible, technically validated, and execution-ready."
-              />
-              <CriteriaCard
-                number="2"
-                title="Measurable, Quantified Impact"
-                description="Every project must deliver clearly defined, quantifiable climate outcomes with baseline measurement, monitoring methodology, and independent verification pathway."
-              />
-              <CriteriaCard
-                number="3"
-                title="Institutional-Grade Financial Return"
-                description="Projects must be structured for 7-10% unlevered financial returns with clear cash flow or asset appreciation pathway and institutional credit quality underwriting."
-              />
-              <CriteriaCard
-                number="4"
-                title="Risk Management & Insurance"
-                description="Comprehensive risk assessment with insurance integration for delivery risk and performance guarantees, plus portfolio-level diversification."
-              />
-              <CriteriaCard
-                number="5"
-                title="Scalability & Standardization"
-                description="Projects should be replicable across multiple geographies with standardized underwriting and monitoring, compatible with fund operating infrastructure."
-              />
+              <CriteriaCard number="1" title="Corporate Sourcing & Gate-3 Pre-Approval" description="Projects would be sourced from corporate sustainability initiatives that have passed internal gate-3 development approval—financially feasible, technically validated, and execution-ready." />
+              <CriteriaCard number="2" title="Measurable, Quantified Impact" description="Every project must deliver clearly defined, quantifiable climate outcomes with baseline measurement, monitoring methodology, and independent verification pathway." />
+              <CriteriaCard number="3" title="Institutional-Grade Financial Return" description="Projects must be structured for 7-10% unlevered financial returns with clear cash flow or asset appreciation pathway and institutional credit quality underwriting." />
+              <CriteriaCard number="4" title="Risk Management & Insurance" description="Comprehensive risk assessment with insurance integration for delivery risk and performance guarantees, plus portfolio-level diversification." />
+              <CriteriaCard number="5" title="Scalability & Standardization" description="Projects should be replicable across multiple geographies with standardized underwriting and monitoring, compatible with fund operating infrastructure." />
             </div>
           </div>
         </div>
@@ -257,22 +221,30 @@ export default function Strategy() {
           </Button>
         </div>
       </section>
-    </>
-  );
+    </>;
 }
-
-function MetricCard({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="bg-card rounded-md p-4 border border-border/30">
+function MetricCard({
+  label,
+  value
+}: {
+  label: string;
+  value: string;
+}) {
+  return <div className="bg-card rounded-md p-4 border border-border/30">
       <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">{label}</p>
       <p className="font-semibold text-foreground">{value}</p>
-    </div>
-  );
+    </div>;
 }
-
-function CriteriaCard({ number, title, description }: { number: string; title: string; description: string }) {
-  return (
-    <div className="bg-background rounded-lg p-6 border border-border/30 flex gap-6">
+function CriteriaCard({
+  number,
+  title,
+  description
+}: {
+  number: string;
+  title: string;
+  description: string;
+}) {
+  return <div className="bg-background rounded-lg p-6 border border-border/30 flex gap-6">
       <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
         <span className="text-primary-foreground font-display font-bold">{number}</span>
       </div>
@@ -280,6 +252,5 @@ function CriteriaCard({ number, title, description }: { number: string; title: s
         <h3 className="font-display font-semibold text-lg text-foreground mb-2">{title}</h3>
         <p className="text-muted-foreground">{description}</p>
       </div>
-    </div>
-  );
+    </div>;
 }
