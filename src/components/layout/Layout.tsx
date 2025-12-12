@@ -11,9 +11,11 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   return (
     <div className="min-h-screen flex flex-col">
-      <DisclaimerBanner />
-      <Header />
-      <main className="flex-1 pt-20">
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <DisclaimerBanner />
+        <Header />
+      </div>
+      <main className="flex-1 pt-32">
         {children}
       </main>
       <ComplianceDisclaimer />

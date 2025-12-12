@@ -19,7 +19,7 @@ export function Header() {
   const location = useLocation();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50">
+    <header className="bg-background/95 backdrop-blur-sm border-b border-border/50">
       <nav className="section-container flex items-center justify-between h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
