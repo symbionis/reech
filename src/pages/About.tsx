@@ -2,21 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Building, Scale, Globe } from "lucide-react";
-
 export default function About() {
-  return (
-    <>
+  return <>
       {/* Hero */}
       <section className="bg-cream-light section-spacing">
         <div className="section-container">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
-              About the Concept
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Reech Fund is exploring how to bridge a critical capital gap in global decarbonization, 
-              potentially delivering institutional returns aligned with verified climate outcomes.
-            </p>
+            <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">About the Fund</h1>
+            <p className="text-xl text-muted-foreground leading-relaxed">Reech Fund bridges a critical capital gap in global decarbonization, delivering institutional returns aligned with verified climate outcomes.</p>
           </div>
         </div>
       </section>
@@ -26,9 +19,7 @@ export default function About() {
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">
-                The Challenge We're Exploring
-              </h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">Why Reech Fund Exists</h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p>
                   Large-scale corporate climate abatement projects—factory retooling, renewable energy deployment, 
@@ -63,10 +54,7 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">
               Climate Performance as a Financial Asset
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              We're exploring a fundamental concept: climate impact should not be separate 
-              from financial returns. It should be embedded in them.
-            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">Reech Fund operates on a fundamental insight: climate impact should not be separate from financial returns. It should be embedded in them.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -115,26 +103,10 @@ export default function About() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <InvestorCard
-              icon={<Users className="w-6 h-6" />}
-              title="Family Offices"
-              description="Impact mandates with institutional discipline"
-            />
-            <InvestorCard
-              icon={<Building className="w-6 h-6" />}
-              title="Pension Funds"
-              description="ESG-focused with long-term horizon"
-            />
-            <InvestorCard
-              icon={<Scale className="w-6 h-6" />}
-              title="Insurance Companies"
-              description="Sustainability commitments aligned"
-            />
-            <InvestorCard
-              icon={<Globe className="w-6 h-6" />}
-              title="Corporate Treasuries"
-              description="Climate-linked investment strategies"
-            />
+            <InvestorCard icon={<Users className="w-6 h-6" />} title="Family Offices" description="Impact mandates with institutional discipline" />
+            <InvestorCard icon={<Building className="w-6 h-6" />} title="Pension Funds" description="ESG-focused with long-term horizon" />
+            <InvestorCard icon={<Scale className="w-6 h-6" />} title="Insurance Companies" description="Sustainability commitments aligned" />
+            <InvestorCard icon={<Globe className="w-6 h-6" />} title="Corporate Treasuries" description="Climate-linked investment strategies" />
           </div>
 
           <div className="text-center mt-8">
@@ -150,13 +122,8 @@ export default function About() {
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">
-                Proposed Governance Structure
-              </h2>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                We're exploring operating as an independent, professionally managed investment vehicle 
-                under Luxembourg RAIF regulation.
-              </p>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-6">Independent Management, Fiduciary Oversight</h2>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">Reech Fund operates as an independent, professionally managed investment vehicle under Luxembourg RAIF regulation.</p>
               <ul className="space-y-4 text-muted-foreground">
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2" />
@@ -182,21 +149,9 @@ export default function About() {
                 Proposed Timeline
               </h3>
               <div className="space-y-6">
-                <TimelineItem
-                  period="Current"
-                  title="Exploration & Interest Gathering"
-                  description="Understanding market interest and refining the concept"
-                />
-                <TimelineItem
-                  period="Future"
-                  title="Legal & Governance Setup"
-                  description="If sufficient interest, formal legal structure and governance"
-                />
-                <TimelineItem
-                  period="Future"
-                  title="Fund Launch"
-                  description="Subject to regulatory approval and investor commitments"
-                />
+                <TimelineItem period="Current" title="Exploration & Interest Gathering" description="Understanding market interest and refining the concept" />
+                <TimelineItem period="Future" title="Legal & Governance Setup" description="If sufficient interest, formal legal structure and governance" />
+                <TimelineItem period="Future" title="Fund Launch" description="Subject to regulatory approval and investor commitments" />
               </div>
             </div>
           </div>
@@ -220,34 +175,47 @@ export default function About() {
           </Button>
         </div>
       </section>
-    </>
-  );
+    </>;
 }
-
-function StatCard({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="bg-card rounded-lg p-6 text-center border border-border/30">
+function StatCard({
+  value,
+  label
+}: {
+  value: string;
+  label: string;
+}) {
+  return <div className="bg-card rounded-lg p-6 text-center border border-border/30">
       <p className="text-3xl font-display font-bold text-primary mb-2">{value}</p>
       <p className="text-sm text-muted-foreground">{label}</p>
-    </div>
-  );
+    </div>;
 }
-
-function InvestorCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
-  return (
-    <div className="bg-card rounded-lg p-6 text-center border border-border/30">
+function InvestorCard({
+  icon,
+  title,
+  description
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) {
+  return <div className="bg-card rounded-lg p-6 text-center border border-border/30">
       <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-4 text-primary">
         {icon}
       </div>
       <h3 className="font-display font-semibold text-foreground mb-2">{title}</h3>
       <p className="text-sm text-muted-foreground">{description}</p>
-    </div>
-  );
+    </div>;
 }
-
-function TimelineItem({ period, title, description }: { period: string; title: string; description: string }) {
-  return (
-    <div className="flex gap-4">
+function TimelineItem({
+  period,
+  title,
+  description
+}: {
+  period: string;
+  title: string;
+  description: string;
+}) {
+  return <div className="flex gap-4">
       <div className="flex flex-col items-center">
         <div className="w-3 h-3 bg-primary rounded-full" />
         <div className="w-0.5 h-full bg-border" />
@@ -257,6 +225,5 @@ function TimelineItem({ period, title, description }: { period: string; title: s
         <p className="font-semibold text-foreground">{title}</p>
         <p className="text-sm text-muted-foreground">{description}</p>
       </div>
-    </div>
-  );
+    </div>;
 }
