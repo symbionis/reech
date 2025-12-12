@@ -9,14 +9,14 @@ import pillarNature from "@/assets/pillar-nature.jpg";
 export default function Home() {
   return <>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center">
+      <section className="relative min-h-[90vh] flex items-start">
         <div className="absolute inset-0 bg-cover bg-center" style={{
         backgroundImage: `url(${heroImage})`
       }}>
           <div className="absolute inset-0 hero-gradient" />
         </div>
         
-        <div className="relative section-container py-24 md:py-32 lg:py-40">
+        <div className="relative section-container pt-24 md:pt-32 lg:pt-40 pb-12">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary-foreground mb-6 animate-fade-in text-balance">Verified Climate Impact With Institutional Discipline</h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 leading-relaxed animate-fade-in animate-fade-in-delay-1">A digital fund financing large-scale corporate climate abatement initiatives with institutional returns and auditable impact outcomes.</p>
