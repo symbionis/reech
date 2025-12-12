@@ -16,7 +16,7 @@ export default function Home() {
           <div className="absolute inset-0 hero-gradient" />
         </div>
         
-        <div className="relative section-container pt-16 md:pt-24 lg:pt-32 pb-12">
+        <div className="relative section-container pt-16 md:pt-24 lg:pt-32 pb-12 py-[250px]">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary-foreground mb-6 animate-fade-in text-balance">Verified Climate Impact With Institutional Discipline</h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 leading-relaxed animate-fade-in animate-fade-in-delay-1">A digital fund financing large-scale corporate climate abatement initiatives with institutional returns and auditable impact outcomes.</p>
