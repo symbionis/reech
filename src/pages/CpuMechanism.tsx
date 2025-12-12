@@ -260,11 +260,11 @@ export default function CpuMechanism() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <BenefitCard icon={<Users className="w-6 h-6" />} title="Aligned Incentives" description="Financial performance and climate performance would be the same goal. No conflict between returns and impact." />
-            <BenefitCard icon={<TrendingUp className="w-6 h-6" />} title="Dual-Source Returns" description="Returns would flow from project cash flows AND climate outcome verification—diversification of return sources." />
-            <BenefitCard icon={<FileCheck className="w-6 h-6" />} title="Transparent Accountability" description="Climate impact would be quantified, verified, auditable, material to returns, and investor-accessible." />
+            <BenefitCard icon={<Users className="w-6 h-6" />} title="Aligned Incentives" description="Financial performance and climate performance are the same goal. No conflict between returns and impact." />
+            <BenefitCard icon={<TrendingUp className="w-6 h-6" />} title="Dual-Source Returns" description="Returns flow from project cash flows AND climate outcome verification—diversification of return sources." />
+            <BenefitCard icon={<FileCheck className="w-6 h-6" />} title="Transparent Accountability" description="Climate impact is quantified, verified, auditable, material to returns, and investor-accessible." />
             <BenefitCard icon={<Lock className="w-6 h-6" />} title="Regulatory Credibility" description="AIFMD compliance, SFDR standards, ISO 14064 methodology, third-party audit standards." />
-            <BenefitCard icon={<ArrowRight className="w-6 h-6" />} title="Market Optionality" description="CPUs could be tradeable on secondary markets. 24/7 trading capability on compliant platforms." />
+            <BenefitCard icon={<ArrowRight className="w-6 h-6" />} title="Market Optionality" description="CPUs are tradeable on secondary markets. 24/7 trading capability on compliant platforms." />
           </div>
         </div>
       </section>
