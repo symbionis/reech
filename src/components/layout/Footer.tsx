@@ -79,15 +79,15 @@ export function Footer() {
       <div className="border-t border-primary-foreground/10">
         <div className="section-container py-8">
           <div className="max-w-4xl">
-            <h4 className="font-display font-semibold text-sm uppercase tracking-wider mb-4 text-primary-foreground/80">
+            <h4 className="font-display font-semibold uppercase tracking-wider mb-4 text-primary-foreground/80 text-xs">
               Disclaimer
             </h4>
-            <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
+            <p className="text-primary-foreground/60 leading-relaxed mb-4 text-xs">
               This website is provided for informational purposes only to explore and discuss 
               climate investment concepts. It does not constitute an offer or invitation to invest, 
               financial, legal, or investment advice, or a prospectus or fund document.
             </p>
-            <p className="text-primary-foreground/60 text-sm leading-relaxed">
+            <p className="text-primary-foreground/60 leading-relaxed text-xs">
               Reech Fund is not yet established or authorized. No investment decisions should be 
               made based on this website. By using this site, you acknowledge that you have read 
               and understood this disclaimer.
