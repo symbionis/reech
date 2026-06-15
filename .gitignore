@@ -17,7 +17,8 @@ dist-ssr
 .env.*
 !.env.example
 
-# Cloudflare Pages Function local secrets (wrangler pages dev) — see .dev.vars.example
+# Cloudflare Worker local state & secrets (wrangler dev) — see .dev.vars.example
+.wrangler
 .dev.vars
 .dev.vars.*
 !.dev.vars.example

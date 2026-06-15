@@ -1,17 +1,19 @@
 /**
- * Cloudflare Pages Function — POST /api/contact (Contact form).
+ * Cloudflare Worker entry. Serves the built SPA through the ASSETS binding and
+ * handles the contact form endpoint:
  *
- * Posts the inquiry to a Slack Incoming Webhook (SLACK_WEBHOOK_URL). The URL is
- * a server-side secret (set in the Pages project: Settings → Variables and
- * Secrets, or `wrangler pages secret put SLACK_WEBHOOK_URL`); when unset the
- * route returns 503 so the form falls back to the email contact. Pages auto-
- * discovers this file and routes `/api/contact` to it — static/SPA routes are
- * served by the asset handler and never reach this script.
+ *   POST /api/contact  (source: Contact form)
+ *
+ * The inquiry is posted to a Slack Incoming Webhook (SLACK_WEBHOOK_URL). The URL
+ * stays server-side (Worker secret); when unset the route returns 503 so the
+ * form falls back to email. Routing is configured in wrangler.jsonc via
+ * `run_worker_first: ["/api/*"]`, so asset and SPA routes never hit this script.
  *
  * Mirrors the Slack wiring used on the ackinax site.
  */
 
 interface Env {
+  ASSETS: { fetch(request: Request): Promise<Response> };
   SLACK_WEBHOOK_URL?: string;
 }
 
@@ -94,11 +96,8 @@ function buildContactMessage(c: ContactMessage) {
   };
 }
 
-export const onRequestPost = async (context: {
-  request: Request;
-  env: Env;
-}): Promise<Response> => {
-  const { request, env } = context;
+async function handleContact(request: Request, env: Env): Promise<Response> {
+  if (request.method !== "POST") return json({ error: "Method not allowed" }, 405);
 
   const ip = request.headers.get("cf-connecting-ip") ?? "unknown";
   if (rateLimited(`contact:${ip}`)) {
@@ -131,4 +130,12 @@ export const onRequestPost = async (context: {
 
   const ok = await postToSlack(env.SLACK_WEBHOOK_URL, buildContactMessage(contact));
   return ok ? json({ success: true }) : json({ error: "Failed to deliver message" }, 502);
+}
+
+export default {
+  async fetch(request: Request, env: Env): Promise<Response> {
+    const url = new URL(request.url);
+    if (url.pathname === "/api/contact") return handleContact(request, env);
+    return env.ASSETS.fetch(request);
+  },
 };
