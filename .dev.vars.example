@@ -1,0 +1,4 @@
+# Slack Incoming Webhook for the /api/contact Pages Function.
+# Local dev only (wrangler pages dev). In production set this as a secret in the
+# Cloudflare Pages project (Settings → Variables and Secrets, encrypt).
+SLACK_WEBHOOK_URL=

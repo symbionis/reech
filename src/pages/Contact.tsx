@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { toast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin, AlertTriangle } from "lucide-react";
+import { Mail, MapPin, AlertTriangle } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -27,28 +27,42 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const data = (await res.json().catch(() => null)) as { success?: boolean } | null;
+      if (!res.ok || !data?.success) throw new Error("Request failed");
 
-    toast({
-      title: "Thank You for Your Interest",
-      description: "We'll review your inquiry and respond with further information at an appropriate time. Note: This is an informational exploration only.",
-    });
+      toast({
+        title: "Thank You for Your Interest",
+        description: "We'll review your inquiry and respond with further information at an appropriate time. Note: This is an informational exploration only.",
+      });
 
-    setFormData({
-      name: "",
-      organization: "",
-      email: "",
-      phone: "",
-      message: "",
-      interests: {
-        general: false,
-        cpuMechanism: false,
-        strategy: false,
-        other: false,
-      },
-    });
-    setIsSubmitting(false);
+      setFormData({
+        name: "",
+        organization: "",
+        email: "",
+        phone: "",
+        message: "",
+        interests: {
+          general: false,
+          cpuMechanism: false,
+          strategy: false,
+          other: false,
+        },
+      });
+    } catch {
+      toast({
+        title: "Couldn't send that",
+        description: "Please email us directly at info@reech.fund.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -248,18 +262,9 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-medium text-foreground mb-1">Email</p>
-                      <a href="mailto:info@reechfund.com" className="text-muted-foreground hover:text-primary transition-colors">
-                        info@reechfund.com
+                      <a href="mailto:info@reech.fund" className="text-muted-foreground hover:text-primary transition-colors">
+                        info@reech.fund
                       </a>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-5 h-5 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-medium text-foreground mb-1">Phone</p>
-                      <p className="text-muted-foreground">+352 XXX XXX XXX</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -269,8 +274,7 @@ export default function Contact() {
                     <div>
                       <p className="font-medium text-foreground mb-1">Office</p>
                       <p className="text-muted-foreground">
-                        Luxembourg City<br />
-                        Luxembourg
+                        Geneva, Switzerland
                       </p>
                     </div>
                   </div>
