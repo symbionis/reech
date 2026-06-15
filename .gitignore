@@ -12,10 +12,9 @@ dist
 dist-ssr
 *.local
 
-# Local env (PostHog keys etc.) — see .env.example
+# Local env
 .env
 .env.*
-!.env.example
 
 # Cloudflare Worker local state & secrets (wrangler dev) — see .dev.vars.example
 .wrangler
