@@ -27,28 +27,42 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const data = (await res.json().catch(() => null)) as { success?: boolean } | null;
+      if (!res.ok || !data?.success) throw new Error("Request failed");
 
-    toast({
-      title: "Thank You for Your Interest",
-      description: "We'll review your inquiry and respond with further information at an appropriate time. Note: This is an informational exploration only.",
-    });
+      toast({
+        title: "Thank You for Your Interest",
+        description: "We'll review your inquiry and respond with further information at an appropriate time. Note: This is an informational exploration only.",
+      });
 
-    setFormData({
-      name: "",
-      organization: "",
-      email: "",
-      phone: "",
-      message: "",
-      interests: {
-        general: false,
-        cpuMechanism: false,
-        strategy: false,
-        other: false,
-      },
-    });
-    setIsSubmitting(false);
+      setFormData({
+        name: "",
+        organization: "",
+        email: "",
+        phone: "",
+        message: "",
+        interests: {
+          general: false,
+          cpuMechanism: false,
+          strategy: false,
+          other: false,
+        },
+      });
+    } catch {
+      toast({
+        title: "Couldn't send that",
+        description: "Please email us directly at info@reech.fund.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
